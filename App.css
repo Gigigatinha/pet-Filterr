@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F8F6F2;
+    color: #343A36;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid #E5E2DC;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h1 span {
+    color: #E99B83;
+}
+
+header p {
+    color: #888;
+    margin-top: 5px;
+}
+
+.banner {
+    text-align: center;
+    padding: 60px 15px;
+}
+
+.banner h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.titulo {
+    margin-bottom: 25px;
+}
+
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.pet-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet-card h2 {
+    font-size: 18px;
+    margin: 15px 0 8px;
+}
+
+.pet-card p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.erro {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    .pet-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .pet-list {
+        grid-template-columns: 1fr;
+    }
+}
+
